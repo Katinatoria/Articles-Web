@@ -1,0 +1,28 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Добавить статью
+{% endblock %}
+
+{% block content %}
+<main>
+   <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+       <h1 class="display-4 fw-normal">Создай свою статью!</h1>
+   </div>
+    <h4 class="display-8 fw-normal">Название статьи</h4>
+    <div class="col-12">
+              <input type="text" class="form-control" maxlength="100" required="">
+              <div class="invalid-feedback">
+                Пожалуйста, введите название вашей статьи.
+              </div>
+    </div>
+    <h4 class="display-8 fw-normal">Текст статьи</h4>
+    <div class="col-12">
+              <input type="text" class="form-control" maxlength="2000" required="">
+              <div class="invalid-feedback">
+                Пожалуйста, введите текст статьи.
+              </div>
+    </div>
+  </main>
+
+{% endblock %}
